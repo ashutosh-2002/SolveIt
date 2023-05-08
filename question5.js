@@ -38,3 +38,7 @@ function submit() {
         error.style.display = 'block';
     }
 }
+
+function skip() {
+    location.assign("question5.html");
+}
