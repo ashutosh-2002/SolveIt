@@ -40,6 +40,12 @@ function SignUp() {
 
     else if (password.value == "")
         showError("Please enter Password !!!");
+    
+    else if (cpassword.value == "")
+        showError("Please re-enter Password !!!");
+
+    else if (cpassword.value != password.value)
+        showError("Password don't match !!!");
 
     else {
         let user = new USER(email.value, name.value, password.value);
