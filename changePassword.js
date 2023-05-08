@@ -15,7 +15,13 @@ function showError(msg) {
 
 function change() {
 
-    if (newPass.value != rnewPass.value)
+    if (newPass.value == "")
+        showError("Please enter password !!!");
+
+    else if (rnewPass.value == "")
+        showError("Please re-enter password !!!");
+
+    else if (newPass.value != rnewPass.value)
         showError("Password don't match !!!");
 
     else {
