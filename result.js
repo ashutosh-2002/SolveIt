@@ -58,7 +58,7 @@ let f2 = 0;
 highestScore.forEach(score => {
 
     if (score.email == currUser.email) {
-        f1 = 1;
+        f2 = 1;
     
         if (score.score < t)
             score.score = t;
