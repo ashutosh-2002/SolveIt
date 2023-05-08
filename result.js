@@ -60,8 +60,8 @@ highestScore.forEach(score => {
     if (score.email == currUser.email) {
         f1 = 1;
     
-    if (score.score < t)
-        score.score = t;
+        if (score.score < t)
+            score.score = t;
     }
 
 });
