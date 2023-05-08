@@ -26,7 +26,7 @@ function submit() {
     if (taskInput.value == "5") {
         let score = parseInt(localStorage.getItem('score'));
         let currtime = parseInt(localStorage.getItem('time'));
-        score += 10;
+        score += 30;
         score += Math.floor(currtime / 60);
         score += (currtime % 60) / 100;
 
