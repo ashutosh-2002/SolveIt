@@ -29,7 +29,7 @@ function submit() {
         let score = parseInt(localStorage.getItem('score'));
         let currtime = parseInt(localStorage.getItem('time'));
         score += 10;
-        score += currtime / 60;
+        score += Math.floor(currtime / 60);
         score += (currtime % 60) / 100;
 
         localStorage.setItem('score', score);
