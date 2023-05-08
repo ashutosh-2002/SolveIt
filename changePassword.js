@@ -23,6 +23,9 @@ function change() {
 
     else if (newPass.value != rnewPass.value)
         showError("Password don't match !!!");
+    
+    else if (newPass.value.length < 8)
+        showError("Password should be atleast 8 characters long !!!");
 
     else {
         Users.forEach(User => {
