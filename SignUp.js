@@ -46,6 +46,9 @@ function SignUp() {
 
     else if (cpassword.value != password.value)
         showError("Password don't match !!!");
+    
+    else if (password.value.length < 8)
+        showError("Password should be atleast 8 characters long !!!");
 
     else {
         let user = new USER(email.value, name.value, password.value);
