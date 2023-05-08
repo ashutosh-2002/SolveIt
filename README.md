@@ -7,9 +7,10 @@ Functionalities of user ->
 2. Sign In
 3. Change Name
 4. Change Password
-5. Submit Answer
-6. Skip Question
-7. Log Out
+5. See previous scores
+6. Submit Answer
+7. Skip Question
+8. Log Out
 
 Functionalities of admin ->
 1. Sign In
