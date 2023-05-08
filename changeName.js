@@ -1,21 +1,38 @@
 const newName = document.querySelector('#newName');
+const rnewName = document.querySelector('#rnewName');
 const done = document.querySelector('#done');
 
 let Users = JSON.parse(localStorage.getItem('Users'));
 let currUser = JSON.parse(localStorage.getItem('currUser'));
 
+function showError(msg) {
+
+    error.textContent = msg;
+    done.style.display = 'none';
+    error.style.display = 'block';
+
+}
+
 function change() {
-    Users.forEach(User => {
 
-        if (User.email == currUser.email) {
+    if (newName.value != rnewName.value)
+        showError("Name don't match !!!");
 
-            User.name = newName.value;
-            localStorage.setItem('Users', JSON.stringify(Users));
-        }
-    });
+    else {
+        Users.forEach(User => {
 
-    currUser.name = newName.value;
-    localStorage.setItem('currUser', JSON.stringify(currUser));
+            if (User.email == currUser.email) {
 
-    done.style.display = 'block';
+                User.name = newName.value;
+                localStorage.setItem('Users', JSON.stringify(Users));
+            }
+        });
+
+        currUser.name = newName.value;
+        localStorage.setItem('currUser', JSON.stringify(currUser));
+
+        error.style.display = 'none';
+        done.style.display = 'block';
+
+    }
 }
