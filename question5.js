@@ -35,6 +35,9 @@ function submit() {
         location.assign("result.html");
     }
     else {
+        let score = parseInt(localStorage.getItem('score'));
+        score -= 5;
+        localStorage.setItem('score', score);
         error.style.display = 'block';
     }
 }
