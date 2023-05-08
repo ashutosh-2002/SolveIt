@@ -40,5 +40,5 @@ function submit() {
 }
 
 function skip() {
-    location.assign("result.html");
+    location.assign("question5.html");
 }
