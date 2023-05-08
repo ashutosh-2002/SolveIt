@@ -15,7 +15,13 @@ function showError(msg) {
 
 function change() {
 
-    if (newName.value != rnewName.value)
+    if (newName.value == "")
+        showError("Please enter name !!!");
+
+    else if (rnewName.value == "")
+        showError("Please re-enter name !!!");
+
+    else if (newName.value != rnewName.value)
         showError("Name don't match !!!");
 
     else {
