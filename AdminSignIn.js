@@ -20,7 +20,7 @@ function SignIn() {
     else if (password.value == "")
         showError("Please enter Password !!!");
 
-    else if (email.value == 'admin@gmail.com' && password.value == '12345') {
+    else if (email.value == 'admin@gmail.com' && password.value == '12345678') {
         location.assign('admin.html');
     }
 
