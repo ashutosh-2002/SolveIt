@@ -19,8 +19,8 @@ Functionalities of admin ->
 5. Log Out
 
 Solution of questions ->
-Question 1 -> 150
-Question 2 -> 5
-Question 3 -> 625
-Question 4 -> 720
-Question 5 -> 2
+1. Question 1 -> 150
+2. Question 2 -> 5
+3. Question 3 -> 625
+4. Question 4 -> 720
+5. Question 5 -> 2
