@@ -7,7 +7,7 @@ const hidden = document.querySelector('#hidden');
 
 function SignIn() {
 
-    if (email.value == 'admin' && password.value == '12345') {
+    if (email.value == 'admin@gmail.com' && password.value == '12345') {
         location.assign('admin.html');
     }
 
