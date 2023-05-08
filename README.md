@@ -17,3 +17,10 @@ Functionalities of admin ->
 3. See latest scores of all users
 4. See highest scores of all users
 5. Log Out
+
+Solution of questions ->
+Question 1 -> 150
+Question 2 -> 5
+Question 3 -> 625
+Question 4 -> 720
+Question 5 -> 2
