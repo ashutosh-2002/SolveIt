@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="task-form">
+        <div class="input-field col s12">
+            Question 1
+            <input type="text" name="task" id="task">
+        </div>
+        <!-- <input type="submit" class="btn" value="Add Task" onclick="addState()"> -->
+    </form>
+
+    <button onclick="addState()">
+        Add New History State
+    </button>
+
+    <!-- <script>
+        // function addState() {
+        //     // let stateObj = { id: "100" };
+
+        //     // window.history.replaceState(stateObj,
+        //     //     "Page", "a.html");
+        //     location.assign("a.html");
+        // }
+        function addState() {
+            // let stateObj = { id: "100" };
+
+            // window.history.replaceState(stateObj,
+            const taskInput = document.querySelector("#task");
+            //     "Page", "a.html");
+            if (taskInput.value == "a1")
+                location.assign("b.html");
+            else
+                location.assign("a.html");
+        }
+    </script> -->
+
+    <script src="q1.js"></script>
+</body>
+
+</html>
